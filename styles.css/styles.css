@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imagen/FONDO_ZABANNE.jpg);
+    background-size: cover;
+}
+
+header img {
+    width: 80px;
+    margin-top: 8px
+}
+
+.container_redes {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu__logo--animacionTitulo {
+    animation: bounce
+}
+
+.efectoFormulario2__menuItem--efectoFormulario2 {
+    width: 150px;
+    font-size: 20px;
+}
+
+.flexboxRow__flexboxColum {
+     display: flex;
+     flex-direction: column;
+     width: 400px;
+     height: 500px;
+}
+ nav {
+     width: 100%;
+     height: 90px;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+.barraProductos{
+    width: 90%;
+    height: 45px;
+}
+
+ .redesSociales {
+     flex-direction: column;
+     align-items: center;
+ }
+
+ nav>ul {
+     margin-right: 10px;
+ }
+
+ nav>ul>li {
+     display: inline-block;
+ }
+
+ .subMenu {
+     display: none;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .menuItem:hover .subMenu {
+     display: block;
+     position: absolute;
+ }
+
+ .flexboxRow {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .flexboxColumn {
+     display: flex;
+     flex-direction: column;
+     width: 400px;
+     height: 500px;
+ }
+
+ .ropa {
+     border: solid 0px;
+     margin: 10px;
+     font-size: 20px;
+ }
+
+ .space-around-z {
+     justify-content: space-around;
+ }
+
+ .flex {
+     display: flex;
+ }
+
+ .logo {
+     font-style: italic;
+     font-weight: 600;
+     font-size: 40px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ .fromulario {
+     font-style: unset;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .item1 {
+     border: solid 1px black;
+     background-color: blanchedalmond;
+     font-size: 20px;
+     padding: 15px;
+ }
+
+ .grid1 {
+
+     display: grid;
+     grid-template-rows: 300px 1fr 1fr 75px;
+     grid-template-columns: 30% auto 15%;
+     height: 500px;
+     grid-template-areas:
+         "nav header header"
+         "nav productos aside"
+         "nav servicios aside"
+         "nav footer footer";
+     grid-row-gap: 5px;
+     grid-column-gap: 10px;
+ }
+
+ nav {
+     grid-area: nav;
+ }
+
+ header {
+     grid-area: header;
+ }
+
+ section#section1 {
+     grid-area: productos;
+ }
+
+ section#section2 {
+     grid-area: servicios;
+ }
+
+ aside {
+     grid-area: aside;
+ }
+
+ footer {
+     grid-area: footer;
+ }
+
+ .animacionTitulo {
+     animation: bounce
+ }
+
+ .efectoDatosPersonales {
+     width: 200px;
+     height: 200px;
+     transition: all 3s;
+ }
+
+ .efectoDatosPersonales {
+     width: 300px;
+     font-size: 24px;
+ }
+
+ .efectoFormulario {
+     width: 100px;
+     height: 100px;
+     transition: all 3s;
+
+ }
+
+ .efectoFormulario {
+     width: 300px;
+     font-size: 20px;
+
+ }
+
+ .efectoFormulario2 {
+     width: 95px;
+     height: 95px;
+     transition: all 5s;
+
+
+ }
+
+ .efectoFormulario2 {
+     width: 150px;
+     font-size: 20px;
+
+
+ }
+
+ .efectoGenero {
+     width: 100px;
+     transition: all 4s;
+ }
+
+ .efectoGenero:hover {
+     width: 300px;
+     font-size: 25px;
+
+ }
+
+ .efectoLimpiar {
+     width: 90px;
+     transition: all 3s;
+ }
+
+ .efectoLimpiar:hover {
+     width: 200px;
+     font-size: 15px;
+
+ }
+
+ .efectoRedesSociales {
+     width: 150px;
+     transition: all 2s;
+ }
+
+ .efectoRedesSociales:hover {
+     width: 250px;
+     font-size: 25px;
+
+ }
+
+ .estilo {
+     animation-name: el_efecto;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+     animation-timing-function: cubic-bezier(.21, .28, 1, -0.04);
+ }
+
+ @keyframes el_efecto {
+     0% {
+         width: 150px;
+     }
+
+     25% {
+         width: 400px;
+         background-color: bisque;
+     }
+
+     50% {
+         width: 200px;
+     }
+
+     75% {
+         width: 300px;
+     }
+
+     100% {
+         width: 150px;
+         background-color: burlywood;
+     }
+ }
+
+ .formato {
+     width: 100px;
+     height: 100px;
+     background-color: #9e768f;
+     border: solid 1px;
+     margin-top: 80px;
+     margin-left: 30px;
+ }
+
+ .estiloFormulario1 {
+
+     background-color: #9fa4c4;
+     background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+ }

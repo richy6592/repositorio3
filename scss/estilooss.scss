@@ -1,0 +1,38 @@
+
+@mixin menu ($fondo, $ancho:100px) {
+    background-color: $fondo;
+    width: $ancho;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+.menu__efectoFormulario2 {
+    @include menu(#111,300px)   
+}
+
+@mixin flexboxRow ($color, $height) {
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexboxRow__flexboxColum {
+    @include flexboxRow(blanchedalmond,0 )
+}
+
+.menu__logo--animacionTitulo {
+    animation: bounce
+}
+
+body {
+    background-image: url(../imagen/FONDO_ZABANNE.jpg);
+    background-size: cover;
+}
+
+@import "section"
+
+
